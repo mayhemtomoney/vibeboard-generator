@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY; // Will be set in Render!
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 app.post('/generate-image', async (req, res) => {
   const { prompt } = req.body;
